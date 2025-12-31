@@ -1,68 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My First Free Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<title>NiKaRa | AI • Tech • YouTube</title>
 
-  <!-- SEO -->
-  <meta name="description" content="My free website hosted on GitHub Pages">
-  
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f6f8;
-      color: #333;
-    }
-    header {
-      background: #0d6efd;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #222;
-      color: #aaa;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="NiKaRa - YouTube channel focused on AI, technology, and future-ready projects." />
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #6c63ff;
+  --dark: #0f1220;
+  --light: #f4f6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f1220, #1a1f3c);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero span {
+  color: var(--primary);
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  animation: fadeUp 1.4s ease forwards;
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 32px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+  animation: fadeUp 1.8s ease forwards;
+}
+
+.hero a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(108,99,255,0.4);
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  padding: 80px 10%;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: var(--primary);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: rgba(0,0,0,0.3);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* ---------- ANIMATION ---------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Welcome to My Website</h1>
-  <p>Hosted for free on GitHub Pages</p>
-</header>
-
-<section>
-  <div class="card">
-    <h2>About Me</h2>
-    <p>This is my first free website using GitHub Pages.</p>
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>Ni<span>Ka</span>Ra</h1>
+    <p>Exploring AI, Technology & the Future on YouTube</p>
+    <a href="#projects">View AI Projects</a>
   </div>
+</div>
 
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Email: example@email.com</p>
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About <span>NiKaRa</span></h2>
+  <p>
+    NiKaRa is a YouTube channel focused on Artificial Intelligence, automation,
+    emerging technology, and future-ready software concepts.
+  </p>
+</section>
+
+<!-- YOUTUBE -->
+<section id="youtube">
+  <h2 class="section-title">YouTube <span>Channel</span></h2>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>🎥 AI Explained</h3>
+      <p>Simple explanations of complex AI concepts.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚙️ Tech Demos</h3>
+      <p>Hands-on demos, tools, and experiments.</p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Future Tech</h3>
+      <p>What’s next in AI and automation.</p>
+    </div>
   </div>
 </section>
 
+<!-- AI PROJECTS -->
+<section id="projects">
+  <h2 class="section-title">AI <span>Projects</span></h2>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>🤖 Coming Soon</h3>
+      <p>AI programs and experiments will be added here.</p>
+    </div>
+
+    <div class="card">
+      <h3>🧠 Open Source</h3>
+      <p>Future GitHub commits showcasing AI code.</p>
+    </div>
+
+    <div class="card">
+      <h3>📊 Data & Models</h3>
+      <p>Machine learning, data analysis, and demos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Connect <span>With Me</span></h2>
+  <p>Email: your@email.com</p>
+  <p>YouTube: NiKaRa</p>
+</section>
+
 <footer>
-  <p>© 2025 My Website</p>
+  © 2025 NiKaRa | Built with GitHub Pages
 </footer>
 
 </body>
