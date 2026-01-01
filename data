@@ -1,5 +1,5 @@
-data
-    /ai-news.json
+data /
+  ai-news.json
 
 {
   "date": "2026-01-01",
