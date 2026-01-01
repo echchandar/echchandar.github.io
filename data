@@ -1,2 +1,25 @@
 data/ai-news.json
+{
+  "date": "2026-01-01",
+  "category": "AI Tech News",
+  "news": [
+    {
+      "id": 1,
+      "title": "OpenAI unveils new AI model for video generation",
+      "summary": "OpenAI introduced a new AI model capable of generating short-form videos optimized for social media platforms.",
+      "source": "OpenAI Blog",
+      "link": "https://openai.com",
+      "shortsScript": "OpenAI just launched a new AI model that can generate short-form videos automatically. This could completely change YouTube Shorts and Reels."
+    },
+    {
+      "id": 2,
+      "title": "Google expands AI-powered search features",
+      "summary": "Google is rolling out AI-generated summaries directly into search results for faster answers.",
+      "source": "The Verge",
+      "link": "https://www.theverge.com",
+      "shortsScript": "Google is adding AI summaries directly into search results. This means fewer clicks and faster answers for users."
+    }
+  ]
+}
+
 
